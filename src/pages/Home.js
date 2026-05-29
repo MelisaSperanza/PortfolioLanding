@@ -10,9 +10,20 @@ export default function Home() {
     <main className="home">
 
       <SpaceBackground />
+
       <StarsLayer />
 
-      <PlanetCard />
+     
+  <div className="planet-card">
+     <PlanetCard />
+  </div>
+
+
+<div className="orbit-container">
+      <OrbitItem
+        label="CV"
+        className="cv"
+      />
 
       <OrbitItem
         label="ABOUT"
@@ -20,20 +31,10 @@ export default function Home() {
       />
 
       <OrbitItem
-        label="FEATURED APP"
-        className="featured"
-      />
-
-      <OrbitItem
-        label="PROJECTS"
-        className="projects"
-      />
-
-      <OrbitItem
         label="CONTACT"
         className="contact"
       />
-
+</div>
     </main>
   )
 }

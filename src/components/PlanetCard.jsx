@@ -1,16 +1,18 @@
 import planetaPixel from '../assets/planetaPixel.png'
-/*corregir css 29/5 12.06am melisa*/
+import '../styles/home.css'
+
+
 export default function PlanetCard() {
   return (
-    <div className="moon-card">
+    <div className="planet-card">
 
       <img
         src={planetaPixel}
         alt="planet"
-        className="moon-image"
+        className="planet-image"
       />
 
-      <h1 className="moon-title">
+      <h1 className="planet-title">
         PROJECTS
       </h1>
 

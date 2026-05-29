@@ -32,7 +32,7 @@ body {
   z-index: 0;
 }
 
-.moon-card {
+.planet-card {
   position: absolute;
 
   top: 50%;
@@ -47,7 +47,7 @@ body {
   align-items: center;
 }
 
-.moon-image {
+.planet-image {
   width: 280px;
 
   filter:
@@ -56,7 +56,7 @@ body {
   animation: float 6s ease-in-out infinite;
 }
 
-.moon-title {
+.planet-title {
   margin-top: 2rem;
 
   color: #ffd54a;
@@ -66,4 +66,78 @@ body {
   text-shadow:
     0 0 8px rgba(255,213,74,.8),
     0 0 20px rgba(255,213,74,.5);
+}
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.orbit-container {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 700px;
+  height: 700px;
+
+  transform: translate(-50%, -50%);
+
+  pointer-events: none;
+}
+
+.orbit-item {
+  position: absolute;
+
+  background: transparent;
+  border: none;
+
+  color: #ffd54a;
+
+  cursor: pointer;
+
+  font-size: 0.7rem;
+
+  transition:
+    transform .2s ease,
+    opacity .2s ease;
+
+  text-shadow:
+    0 0 8px rgba(255,213,74,.8);
+
+  pointer-events: auto;
+}
+
+.orbit-item:hover {
+  transform: scale(1.1);
+}
+
+/* POSICIONES RELATIVAS A LA ÓRBITA */
+
+.cv {
+  top: 50%;
+  right: 0;
+
+  transform: translateY(-50%);
+}
+
+.about {
+  top: 10%;
+  left: 10%;
+}
+
+.contact {
+  bottom: 10%;
+  right: 10%;
 }
