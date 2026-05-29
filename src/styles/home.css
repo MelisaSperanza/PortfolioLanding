@@ -132,15 +132,6 @@ body {
   transform: scale(1.5);
 }
 
-/* POSICIONES RELATIVAS A LA ÓRBITA */
-
-.cv {
-  top: 50%;
-  right: 10%;
-  transform: translateY(-50%);
-}
-
-
 
 /*Satélite contacto*/
 
@@ -187,6 +178,7 @@ body {
   filter: brightness(1.1);
 
 }
+
 
 @keyframes satelliteFloat {
 

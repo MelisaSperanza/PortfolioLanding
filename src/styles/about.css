@@ -1,0 +1,26 @@
+
+.kitties-background{
+width: 100vw;
+  height: 100vh;
+  background-image:
+    url('/public/fondoGatitos.gif');
+
+background-size: cover;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.kitties-background-2{
+width: 100vw;
+  height: 100vh;
+  background-image:
+    url('/public/fondoGatitos2.gif');
+
+background-size: cover;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}

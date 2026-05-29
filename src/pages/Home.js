@@ -1,12 +1,14 @@
 import '../styles/home.css'
 
+import { Link } from "react-router-dom";
+
 import SpaceBackground from '../components/SpaceBackground'
 import StarsLayer from '../components/StarsLayer'
 import PlanetProjectsCard from '../components/PlanetProjectsCard'
-import OrbitItem from '../components/OrbitItem'
 import SatelliteContactCard from '../components/SatelliteContactCard'
 import EarthAboutCard from '../components/EarthAboutCard'
 import JupiterCVCard from '../components/JupiterCVCard'
+
 
 export default function Home() {
   return (
@@ -18,19 +20,38 @@ export default function Home() {
 
             
         <div className="planet-card">
-            <PlanetProjectsCard />
+         
+            <a
+                href="https://github.com/MelisaSperanza"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <PlanetProjectsCard />
+            </a>
         </div>
 
         <div className="satellite-card">
-            <SatelliteContactCard/> 
+            <Link to="/contact">
+                <SatelliteContactCard/> 
+            </Link>
         </div>
 
         <div className="earth-card">
-            <EarthAboutCard/>
+            <Link to="/about">
+                <EarthAboutCard/>
+            </Link>
         </div>
 
         <div className="jupiter-card">
+            <a
+                href="https://linkedin.com/in/melisa-speranza"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                
+            
             <JupiterCVCard/>
+            </a>
         </div>
 
     

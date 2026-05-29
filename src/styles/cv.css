@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(23, 1, 51);
+  overflow: hidden;
+}
+
+.home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.space-background {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    url('/public/starryBackground2.jpg');
+
+  background-size: cover;
+  background-position: center;
+
+  z-index: 0;
+}
