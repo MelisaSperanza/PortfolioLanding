@@ -52,7 +52,7 @@ body {
 
   filter:
     drop-shadow(0 0 25px rgba(255,255,255,.4));
-
+  cursor: pointer;
   animation: float 6s ease-in-out infinite;
 
 }
@@ -64,9 +64,6 @@ body {
     drop-shadow(0 0 35px rgba(255,255,255,.7))
     drop-shadow(0 0 60px rgba(255,213,74,.5));
 }
-
-
-
 
 .planet-title {
   margin-top: 2rem;
@@ -119,7 +116,7 @@ body {
 
   cursor: pointer;
 
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 
   transition:
     transform .2s ease,
@@ -139,7 +136,7 @@ body {
 
 .cv {
   top: 50%;
-  right: 0;
+  right: 10%;
 
   transform: translateY(-50%);
 }
@@ -149,7 +146,67 @@ body {
   left: 10%;
 }
 
-.contact {
-  bottom: 10%;
-  right: 10%;
+/*Satélite contacto*/
+
+
+.satellite-card {
+  position: absolute;
+
+  top: 15%;
+  right: 20%;
+
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.satellite-image {
+  width: 90px;
+
+  filter:
+    drop-shadow(0 0 25px rgba(255,255,255,.4));
+  animation: float 9s ease-in-out infinite;
+ 
+  cursor: pointer;
+  animation:
+    satelliteFloat 5s ease-in-out infinite;
+
+  overflow: hidden;
+}
+
+.satellite-label {
+    margin-top: 2rem;
+
+    color: #ffd54a;
+
+    font-size: 0.65rem;
+
+    text-align: center;
+
+    z-index: 2;
+
+    text-shadow:
+        0 0 4px rgba(255,255,255,.5);
+}
+
+.satellite-card:hover {
+  filter: brightness(1.1);
+
+
+}
+
+@keyframes satelliteFloat {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }

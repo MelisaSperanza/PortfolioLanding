@@ -4,6 +4,7 @@ import SpaceBackground from '../components/SpaceBackground'
 import StarsLayer from '../components/StarsLayer'
 import PlanetCard from '../components/PlanetCard'
 import OrbitItem from '../components/OrbitItem'
+import SatelliteCard from '../components/SatelliteCard'
 
 export default function Home() {
   return (
@@ -18,6 +19,9 @@ export default function Home() {
             <PlanetCard />
         </div>
 
+        <div className="satellite-card">
+            <SatelliteCard/> 
+        </div>
 
         <div className="orbit-container">
             <OrbitItem
@@ -30,11 +34,9 @@ export default function Home() {
                 className="about"
             />
 
-            <OrbitItem
-                label="CONTACT"
-                className="contact"
-            />
         </div>
+
+     
     </main>
   )
 }
