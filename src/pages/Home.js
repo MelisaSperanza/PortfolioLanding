@@ -9,32 +9,32 @@ export default function Home() {
   return (
     <main className="home">
 
-      <SpaceBackground />
+        <SpaceBackground />
 
-      <StarsLayer />
+        <StarsLayer />
 
-     
-  <div className="planet-card">
-     <PlanetCard />
-  </div>
+            
+        <div className="planet-card">
+            <PlanetCard />
+        </div>
 
 
-<div className="orbit-container">
-      <OrbitItem
-        label="CV"
-        className="cv"
-      />
+        <div className="orbit-container">
+            <OrbitItem
+                label="CV"
+                className="cv"
+            />
 
-      <OrbitItem
-        label="ABOUT"
-        className="about"
-      />
+            <OrbitItem
+                label="ABOUT"
+                className="about"
+            />
 
-      <OrbitItem
-        label="CONTACT"
-        className="contact"
-      />
-</div>
+            <OrbitItem
+                label="CONTACT"
+                className="contact"
+            />
+        </div>
     </main>
   )
 }

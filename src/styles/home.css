@@ -54,7 +54,19 @@ body {
     drop-shadow(0 0 25px rgba(255,255,255,.4));
 
   animation: float 6s ease-in-out infinite;
+
 }
+
+.planet-image:hover{
+  transform: scale(1.5);
+
+   filter:
+    drop-shadow(0 0 35px rgba(255,255,255,.7))
+    drop-shadow(0 0 60px rgba(255,213,74,.5));
+}
+
+
+
 
 .planet-title {
   margin-top: 2rem;
@@ -120,7 +132,7 @@ body {
 }
 
 .orbit-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 /* POSICIONES RELATIVAS A LA ÓRBITA */
