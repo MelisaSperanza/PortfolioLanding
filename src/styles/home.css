@@ -48,7 +48,7 @@ body {
 }
 
 .planet-image {
-  width: 280px;
+  width: 240px;
 
   filter:
     drop-shadow(0 0 25px rgba(255,255,255,.4));
@@ -137,30 +137,24 @@ body {
 .cv {
   top: 50%;
   right: 10%;
-
   transform: translateY(-50%);
 }
 
-.about {
-  top: 10%;
-  left: 10%;
-}
+
 
 /*Satélite contacto*/
-
 
 .satellite-card {
   position: absolute;
 
-  top: 15%;
+  top: 10%;
   right: 20%;
-
-
-
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
+
 .satellite-image {
   width: 90px;
 
@@ -176,8 +170,7 @@ body {
 }
 
 .satellite-label {
-    margin-top: 2rem;
-
+    
     color: #ffd54a;
 
     font-size: 0.65rem;
@@ -192,7 +185,6 @@ body {
 
 .satellite-card:hover {
   filter: brightness(1.1);
-
 
 }
 
@@ -209,4 +201,65 @@ body {
   100% {
     transform: translateY(0px);
   }
+}
+
+
+/*Earth about*/
+
+.earth-card {
+  position: absolute;
+
+  top: 7%;
+  left: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.earth-image {
+  width: 60px;
+
+  filter:
+    drop-shadow(0 0 25px rgba(255,255,255,.4));
+  animation: float 9s ease-in-out infinite;
+ 
+  cursor: pointer;
+
+  overflow: hidden;
+}
+
+.earth-card:hover {
+  filter: brightness(1.1);
+
+}
+
+/*Jupiter CV Card*/
+
+.jupiter-card {
+  position: absolute;
+
+  top: 55%;
+  left: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.jupiter-image {
+  width: 60px;
+
+  filter:
+    drop-shadow(0 0 25px rgba(255,255,255,.4));
+  animation: float 9s ease-in-out infinite;
+ 
+  cursor: pointer;
+
+  overflow: hidden;
+}
+
+.jupiter-card:hover {
+  filter: brightness(1.1);
+
 }

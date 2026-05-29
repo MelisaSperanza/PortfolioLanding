@@ -12,10 +12,11 @@ export default function SatelliteCard() {
         className="satellite-image"
       />
 
-
+      <h1 className="satellite-label">
+        CONTACT
+      </h1>
+      
     </div>
-
-    
 
   )
 }

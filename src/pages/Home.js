@@ -2,9 +2,11 @@ import '../styles/home.css'
 
 import SpaceBackground from '../components/SpaceBackground'
 import StarsLayer from '../components/StarsLayer'
-import PlanetCard from '../components/PlanetCard'
+import PlanetProjectsCard from '../components/PlanetProjectsCard'
 import OrbitItem from '../components/OrbitItem'
-import SatelliteCard from '../components/SatelliteCard'
+import SatelliteContactCard from '../components/SatelliteContactCard'
+import EarthAboutCard from '../components/EarthAboutCard'
+import JupiterCVCard from '../components/JupiterCVCard'
 
 export default function Home() {
   return (
@@ -16,26 +18,22 @@ export default function Home() {
 
             
         <div className="planet-card">
-            <PlanetCard />
+            <PlanetProjectsCard />
         </div>
 
         <div className="satellite-card">
-            <SatelliteCard/> 
+            <SatelliteContactCard/> 
         </div>
 
-        <div className="orbit-container">
-            <OrbitItem
-                label="CV"
-                className="cv"
-            />
-
-            <OrbitItem
-                label="ABOUT"
-                className="about"
-            />
-
+        <div className="earth-card">
+            <EarthAboutCard/>
         </div>
 
+        <div className="jupiter-card">
+            <JupiterCVCard/>
+        </div>
+
+    
      
     </main>
   )
