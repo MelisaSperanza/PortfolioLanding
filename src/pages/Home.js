@@ -31,9 +31,15 @@ export default function Home() {
         </div>
 
         <div className="satellite-card">
-            <Link to="/contact">
-                <SatelliteContactCard/> 
-            </Link>
+             <a
+                href="https://www.linkedin.com/in/melisa-speranza/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                  <SatelliteContactCard/> 
+            </a>
+              
+           
         </div>
 
         <div className="earth-card">

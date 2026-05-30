@@ -1,10 +1,15 @@
 import '../styles/cv.css'
-import starryBackground3 from '../public/starryBackground3.jpg'
+
 
 function CV() {
 return (
+
+    <div
+  className="cv-background"
+  
+>
 <div
-className="cv-page cv-background"
+className="cv-page"
 
 > <div className="cv-container"> <header className="cv-header"> <h1>Melisa Speranza</h1> <p>Junior Full Stack Developer (Java, React & Node.js)</p> </header>
 
@@ -196,7 +201,7 @@ className="cv-page cv-background"
   </div>
 </div>
 
-
+</div>
 );
 }
 

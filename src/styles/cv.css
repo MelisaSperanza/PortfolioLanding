@@ -1,33 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: rgb(23, 1, 51);
-  overflow: hidden;
-}
-
-.home {
-  position: relative;
-  width: 100vw;
+.cv-background{
+width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  font-family: 'Press Start 2P', cursive;
-}
-
-.space-background-3 {
-  position: absolute;
-  inset: 0;
-
   background-image:
     url('/public/starryBackground3.jpg');
 
-  background-size:cover;
-  background-position: center;
+background-size: cover;
 
-  z-index: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.cv-page {
+height: auto;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+padding: 3rem 1rem;
+}
+
+.cv-container {
+max-width: 1100px;
+margin: 0 auto;
+border: 3px solid #00f7ff;
+border-radius: 16px;
+padding: 2rem;
+backdrop-filter: blur(8px);
+box-shadow:
+0 0 15px #00f7ff,
+0 0 30px #00f7ff44;
+}
+
+.cv-header {
+text-align: center;
+margin-bottom: 2rem;
+}
+
+.cv-header h1 {
+font-family: "Press Start 2P", cursive;
+color: #00f7ff;
+font-size: 1.8rem;
+margin-bottom: 1rem;
+text-shadow: 0 0 10px #00f7ff;
+}
+
+.cv-header p {
+color: #ffffff;
+font-size: 0.9rem;
+}
+
+.cv-section {
+margin-bottom: 2rem;
+}
+
+.cv-section h2 {
+font-family: "Press Start 2P", cursive;
+color: #ff00ff;
+margin-bottom: 1rem;
+font-size: 1rem;
+text-shadow: 0 0 8px #ff00ff;
+}
+
+.cv-section h3 {
+color: #00f7ff;
+margin-bottom: 0.8rem;
+}
+
+.cv-section p,
+.cv-section li,
+.cv-section a {
+color: #f5f5f5;
+line-height: 1.8;
+}
+
+.cv-section ul {
+padding-left: 1.4rem;
+}
+
+.cv-section a {
+display: block;
+margin-top: 0.5rem;
+color: #00f7ff;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.cv-section a:hover {
+color: #ff00ff;
+}
+
+.skills-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 1.5rem;
+}
+
+.project-card {
+background: rgba(255, 255, 255, 0.05);
+border: 1px solid #00f7ff55;
+border-radius: 12px;
+padding: 1.5rem;
+margin-bottom: 1.5rem;
+}
+
+.project-card:hover {
+transform: translateY(-4px);
+transition: 0.3s ease;
+box-shadow: 0 0 15px #00f7ff55;
+}
+
+@media (max-width: 768px) {
+.cv-container {
+padding: 1.2rem;
+}
+
+.cv-header h1 {
+font-size: 1rem;
+line-height: 1.5;
+}
+
+.cv-section h2 {
+font-size: 0.8rem;
+}
+
+.skills-grid {
+grid-template-columns: 1fr;
+}
 }
