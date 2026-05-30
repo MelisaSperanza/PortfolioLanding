@@ -19,14 +19,14 @@ body {
   font-family: 'Press Start 2P', cursive;
 }
 
-.space-background {
+.space-background-3 {
   position: absolute;
   inset: 0;
 
   background-image:
-    url('/public/starryBackground2.jpg');
+    url('/public/starryBackground3.jpg');
 
-  background-size: cover;
+  background-size:cover;
   background-position: center;
 
   z-index: 0;

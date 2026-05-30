@@ -43,15 +43,9 @@ export default function Home() {
         </div>
 
         <div className="jupiter-card">
-            <a
-                href="https://linkedin.com/in/melisa-speranza"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                
-            
-            <JupiterCVCard/>
-            </a>
+            <Link to="/cv">
+                <JupiterCVCard/>
+            </Link>
         </div>
 
     
