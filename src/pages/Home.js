@@ -31,21 +31,23 @@ export default function Home() {
         </div>
 
         <div className="satellite-card">
-             <a
-                href="https://www.linkedin.com/in/melisa-speranza/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
+             <Link to="/contact">
+               
                   <SatelliteContactCard/> 
-            </a>
+            
+            </Link>
               
            
         </div>
 
         <div className="earth-card">
-            <Link to="/about">
-                <EarthAboutCard/>
-            </Link>
+           <a
+                href="https://www.linkedin.com/in/melisa-speranza/"
+                target="_blank"
+                rel="noopener noreferrer"
+            ><EarthAboutCard/></a>
+                
+            
         </div>
 
         <div className="jupiter-card">

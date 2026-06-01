@@ -4,10 +4,9 @@ import '../styles/cv.css'
 function CV() {
 return (
 
-    <div
-  className="cv-background"
-  
->
+<div
+  className="cv-background">
+    
 <div
 className="cv-page"
 
