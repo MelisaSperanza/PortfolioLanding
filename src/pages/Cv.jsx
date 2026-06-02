@@ -19,6 +19,7 @@ className="cv-page"
       <p>📍 Barcelona, Spain</p>
       <p>📞 (+34) 686 749 368</p>
       <p>✉️ melisb3@gmail.com</p>
+      <p>Española, Spanish native, English bilingual.</p>
 
       <a
         href="https://linkedin.com/in/melisa-speranza"

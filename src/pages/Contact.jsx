@@ -20,8 +20,6 @@ export default function Contact() {
 
 const handleSubmit = async (e) => {
 
-console.log("PUBLIC KEY:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
-console.log("PUBLIC KEY:", process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
 
   e.preventDefault();
 
@@ -30,8 +28,8 @@ console.log("PUBLIC KEY:", process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
   process.env.REACT_APP_EMAILJS_SERVICE_ID,
   process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
   {
-    from_name: form.name,
-    from_email: form.email,
+    name: form.name,
+    email: form.email,
     message: form.message,
   },
   process.env.REACT_APP_EMAILJS_PUBLIC_KEY
