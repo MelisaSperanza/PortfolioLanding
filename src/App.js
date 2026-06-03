@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Cv from "./pages/Cv";
 import Projects from "./pages/Projects";
 
+
 function App() {
   return (
     <BrowserRouter>

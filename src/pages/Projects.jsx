@@ -26,14 +26,20 @@ export default function Projects() {
             </div>
 
             <div className="astronaut-card">
-                
+                <a
+                    href="https://super-pasca-612521.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <AstronautCard/>
                 
+                </a>
+                    
        
 
             </div>
 
-            <div className="satellite-card">
+            <div className="satellite-card satellite-image">
                 <Link to="/contact">
                     <SatelliteContactCard/>
                 
