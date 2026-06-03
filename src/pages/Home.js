@@ -21,13 +21,10 @@ export default function Home() {
             
         <div className="planet-card">
          
-            <a
-                href="https://github.com/MelisaSperanza"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
+           <Link to="/projects">
+               
                 <PlanetProjectsCard />
-            </a>
+             </Link>
         </div>
 
         <div className="satellite-card">
