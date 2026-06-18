@@ -1,4 +1,4 @@
-import planetaPixel from '../assets/planetaPixel.png'
+import vehicleAppPixel from '../assets/vehicleAppPixel.png'
 import '../styles/home.css'
 
 
@@ -7,13 +7,13 @@ export default function PlanetCard() {
     <div className="planet-vehiculos-card">
 
       <img
-        src={planetaPixel}
+        src={vehicleAppPixel}
         alt="planet"
         className="planet-vehiculos-image"
       />
 
       <h1 className="planet-vehiculos-label">
-        Sales Management App
+        Vehicle Management App
       </h1>
 
     </div>
