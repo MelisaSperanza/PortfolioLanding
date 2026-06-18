@@ -123,6 +123,7 @@ body {
   
   filter:
     drop-shadow(0 0 25px rgba(255,255,255,.4));
+    
   animation: satelliteFloat 5s ease-in-out infinite;
  
   cursor: pointer;
@@ -146,7 +147,9 @@ body {
 
 .satellite-card:hover {
   filter: brightness(1.1);
-
+  filter:
+      drop-shadow(0 0 35px rgba(255,255,255,.7))
+      drop-shadow(0 0 60px rgba(255,213,74,.5));
 }
 
 
@@ -262,3 +265,51 @@ body {
   filter: brightness(1.1);
 
 }
+
+/*Satélite contacto*/
+
+.planet-vehiculos-card {
+  position: absolute;
+
+  top: 25%;
+  right: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.planet-vehiculos-image {
+  width: 100px;
+  
+  filter:
+    drop-shadow(0 0 25px rgba(255,255,255,.4));
+    
+  animation: satelliteFloat 5s ease-in-out infinite;
+ 
+  cursor: pointer;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.planet-vehiculos-label {
+    
+    color: #ffd54a;
+
+    font-size: 1.00rem;
+
+    text-align: center;
+
+    z-index: 2;
+
+    text-shadow:
+        0 0 4px rgba(255,255,255,.5);
+}
+
+.planet-vehiculos-card:hover {
+  filter: brightness(1.1);
+  filter:
+      drop-shadow(0 0 35px rgba(255,255,255,.7))
+      drop-shadow(0 0 60px rgba(255,213,74,.5));
+}
+
