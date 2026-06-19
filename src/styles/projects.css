@@ -266,13 +266,13 @@ body {
 
 }
 
-/*Satélite contacto*/
+/*Planeta app vehiculos*/
 
 .planet-vehiculos-card {
   position: absolute;
 
   top: 10%;
-  right: 20%;
+  left: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -313,3 +313,75 @@ body {
       drop-shadow(0 0 60px rgba(255,213,74,.5));
 }
 
+/*UX Design Planet*/
+
+
+.uxdesign-card {
+  position: absolute;
+
+  top: 80%;
+  left: 35%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+.uxdesign-image {
+  width: 90px;
+
+  filter:
+    drop-shadow(0 0 25px rgba(255,255,255,.4));
+  animation: float 10s ease-in-out infinite;
+ 
+  
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+
+.uxdesign-card-title {
+    
+    color: #ffd54a;
+
+    font-size: 1.00rem;
+
+    text-align: center;
+
+    z-index: 2;
+
+    text-shadow:
+        0 0 4px rgba(255,255,255,.5);
+    
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uxdesign-card:hover {
+  filter: brightness(1.1);
+
+}
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
