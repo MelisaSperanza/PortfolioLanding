@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  overflow: hidden;
+}
+
+.design {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.project-space-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.project-space-background-gif {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.90;
+}
+
+
+/*Satélite contacto*/
+
+.satellite-card {
+  position: absolute;
+
+  top: 20%;
+  right: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.satellite-image {
+  width: 100px;
+  
+  filter:
+    drop-shadow(0 0 25px rgba(255,255,255,.4));
+    
+  animation: satelliteFloat 5s ease-in-out infinite;
+ 
+  cursor: pointer;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.satellite-label {
+    
+    color: #ffd54a;
+
+    font-size: 0.65rem;
+
+    text-align: center;
+
+    z-index: 2;
+
+    text-shadow:
+        0 0 4px rgba(255,255,255,.5);
+}
+
+.satellite-card:hover {
+  filter: brightness(1.1);
+  filter:
+      drop-shadow(0 0 35px rgba(255,255,255,.7))
+      drop-shadow(0 0 60px rgba(255,213,74,.5));
+}
+
+
+@keyframes satelliteFloat {
+  0%, 100% {
+    transform: scaleX(-1) translateY(0);
+  }
+
+  50% {
+    transform: scaleX(-1) translateY(-10px);
+  }
+}
+
+
+/*UX Design Planet*/
+
+
+.uxdesign-card {
+  position: absolute;
+
+  top: 80%;
+  left: 35%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+.uxdesign-image {
+  width: 90px;
+
+  filter:
+    drop-shadow(0 0 25px rgba(255,255,255,.4));
+  animation: float 10s ease-in-out infinite;
+ 
+  
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+
+.uxdesign-card-title {
+    
+    color: #ffd54a;
+
+    font-size: 1.00rem;
+
+    text-align: center;
+
+    z-index: 2;
+
+    text-shadow:
+        0 0 4px rgba(255,255,255,.5);
+    
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uxdesign-card:hover {
+  filter: brightness(1.1);
+
+}
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+ 
+
+
+/*Video1 Icon*/
+
+
+.video1-card {
+position: absolute;
+
+  top: 10%;
+  left: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.video1-image {
+  width: 90px;
+
+  filter:
+    drop-shadow(0 0 25px rgba(255,255,255,.4));
+  animation: float 10s ease-in-out infinite;
+ 
+  
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+
+.video1-card-title {
+    
+    color: #ffd54a;
+
+    font-size: 1.00rem;
+
+    text-align: center;
+
+    z-index: 2;
+
+    text-shadow:
+        0 0 4px rgba(255,255,255,.5);
+    
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video1-card:hover {
+  filter: brightness(1.1);
+
+}
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

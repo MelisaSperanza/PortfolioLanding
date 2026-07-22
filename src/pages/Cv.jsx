@@ -60,7 +60,9 @@ className="cv-page"
         strong communication skills, problem-solving abilities and a
         user-centered approach to software development.
       </p>
-
+      <p>
+        Graphic design, Adobe Suite, Canva, CapCut, Gimp, Inkscape. HQ files for corporate use, presentations, stands, web.
+      </p>
       <p>
         Multiplatform Application Development (DAM) student at IOC.
       </p>
@@ -186,7 +188,7 @@ className="cv-page"
       <h2>Previous Experience</h2>
 
       <p>
-        Sales, marketing and technical support experience. Full details
+        Sales, design, marketing and technical support experience. Full details
         available on LinkedIn.
       </p>
 
