@@ -2,7 +2,6 @@ import '../styles/projects.css'
 import '../styles/design.css'
 import { Link } from "react-router-dom";
 import ProjectSpaceBackground from '../components/ProjectSpaceBackground'
-import StarsLayer from '../components/StarsLayer'
 import SatelliteContactCard from '../components/SatelliteContactCard'
 import UxDesignCard from '../components/UxDesignCard';
 import { Video1Card } from "../components/Video1Card";
@@ -13,8 +12,7 @@ export default function Design() {
 
             <ProjectSpaceBackground />
 
-
-                
+   
            <div className="video1-card"> 
 
                 <a
